@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formato de video para seu site</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedado localmente</h1>
+    <p>Este video esta hospedado no meu proprio servidor.</p>
+    <video  width="500" poster="video/g.png" title="video localmente" controls>
+
+        <!-- ele vai tenta carregar na ordem colocada no caso aqui seria pelo MP4 -->
+        <source src="video/video1.mp4" type="video/mp4">
+        <source src="video/vide3.webm" type="video/webm">
+        <source src="video/video2.ogv" type="video/ogg">
+        <p>seu navegador não tem compatibilidade com reprodução de video. </p>
+    </video>
+    <h1>Inserindo video do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/M_7ezX5XJO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

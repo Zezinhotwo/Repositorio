@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imgagens Dinamica</title>
+</head>
+
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Tente Abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu
+        navegador</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="../imagens/p.png" type="image/png">
+
+        <source media="(max-width:1050px)" srcset="../imagens/m.png" type="image/png">
+        <!-- a imagens menor tem q ser a primeira e as maiores abaixo -->
+        <img src="../imagens/g.png" alt="">
+    </picture>
+
+    <!-- modelo padrao de adicionar audio abaixo-->
+
+    <!-- <h1>Reproduzindo Àudio</h1>
+    <p>Vamos aprender a produzir áudios em HTML5.</p>
+    <audio src="musica.mp3" controls></audio> -->
+    <!-- MP3 WAV OGG -->
+
+
+    <!-- outra maneira de adicionar audio -->
+    <audio preload="metadata" controls autoplay loop>
+        <source src="musica.mp3" type="audio/mpeg">
+        <!-- vai  tenta carrgar o moder mp3 que e o acima -->
+        <source src="musica.ogg" type="audio/ogg">
+        <!-- se o modelo MP3 nao carregar ele vai tentar carregar o modelo OGG -->
+        <source src="musica.wav" type="audio/wav">
+        <!-- Si o Modelo acima nao carregar ele vai tenta essa ultima opçao e se nao for aparecera a mensagem abaixo -->
+        <p>infelizmente seu navegador nao consegue reproduzir audio. <a href="musica.mp3">CLique aqui para baixar o
+                arquico MP3</a></p>
+    </audio>
+</body>
+
+</html>

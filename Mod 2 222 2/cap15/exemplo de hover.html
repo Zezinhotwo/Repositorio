@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exenplo de hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div > p{
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+            color: white;
+            background-color: red;
+        }
+        div:hover{
+            color:red;
+        }
+      /* minha pratica ABAIXO!! */
+        
+        ul >div{
+            display: none;
+            flex-direction: column;
+        }
+        ul:hover >div{
+            display:flex;
+            flex-direction: column;
+            display: block;
+            background-color: black;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Oasse o mouse sobre o texto abaixo</p>
+    <div>
+        passe o mouse aqui 
+        <p>TEXTO ESCONDIDO.....</p>
+    </div>
+    <p>Fim do Exemplo</p>
+
+
+    <!-- Minha pratica -->
+    <ul id="p" type="none">
+     
+        <li id="p">HOME</li>
+        <div>
+            <ul type="none">
+                <li>objeto 1</li>
+                <li>objeto 2</li>
+                <li>objeto 3</li>
+                <li>objeto 4</li>
+            </ul>
+        </div>
+        <li id="p">OUTROS</li>
+        <li id="p">NOTICIA</li>
+
+    </ul>
+</body>
+</html>
